@@ -6,14 +6,14 @@ int main(){
     scanf("%d",&t);
     // n <= 10^5
     long int n;
-    scanf("%d",&n);
+    scanf("%ld",&n);
     //after check ;
     // how space and newlind read
     long int a[n];
     for (int i= 0; i < n; i++) {
-       scanf("%d",&n[i]);
+       scanf("%ld",&a[i]);
     }
-    int xor;
+    int xor, b[n*n];
 
     for (int i= 0; i < n; i++) {
          for (int j= 0; i < n; i++) {
@@ -23,7 +23,7 @@ int main(){
           
     }
     //return xor      
-    printf("%d%n",xor);
+    printf("%d",xor);
     return 0;
     
 }
