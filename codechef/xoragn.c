@@ -13,15 +13,26 @@ int main(){
     for (int i= 0; i < n; i++) {
        scanf("%ld",&a[i]);
     }
-    int xor, b[n*n];
+    //int xor = 0; 
+    int  b[n*n];
 
     for (int i= 0; i < n; i++) {
          for (int j= 0; i < n; i++) {
-            int btmp = b[i*n + j +1] = a[i+1] + a[j+1];
-             xor ^= btmp;
+             b[i*n + j +1] = a[i+1] + a[j+1];
+           // int btmp  = a[i+1] + a[j+1];
+            // xor ^= btmp;
           }
           
     }
+    int xor=b[0];
+//
+ //   for (int i=0; i < (n * n); i++) {
+//	    xor ^=b[i];
+ //   }
+    for (int i=1; i < (n * n); i++) {
+	    xor ^= b[i];
+    }
+	    
     //return xor      
     printf("%d",xor);
     return 0;
