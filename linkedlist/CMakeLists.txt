@@ -9,9 +9,9 @@
 cmake_minimum_required(VERSION 3.10)
 #cmake_minimum_required(VERSION 3.4)
 #set(CMAKE_C_STANDARD 99)
-project(linkedlist)
+project(linkedlisttest)
 
-add_executable(linkedlist linkedlist.c)
+add_executable(linkedlisttest linkedlist.c)
 # linklist.c use test framework
 #target_include_directories(linkedlist PUBLIC ${GTEST_INCLUDE_DIRS})
 #target_link_libraries(linkedlist ${GTEST_LIBRARIES})
@@ -21,6 +21,6 @@ add_executable(linkedlist linkedlist.c)
 #        Unity
 #        )
 #target_include_directories(linkedlist PUBLIC ${UTEST_INCLUDE_DIRS})
-target_link_libraries(linkedlist Unity)
+target_link_libraries(linkedlisttest Unity)
 enable_testing()
-add_test(NAME linkedlist COMMAND linkedlist)
+add_test(NAME linkedlisttest COMMAND linkedlisttest)

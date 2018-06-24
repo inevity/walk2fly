@@ -1,8 +1,7 @@
 add_library(linkedlist STATIC
-        linkedlist/linkedlist.c
+        linkedlist/list.c
         )
 
-target_include_directories(linkedlist PUBLIC
-        linkedlist
-        )
+target_include_directories(linkedlist PUBLIC linkedlist include)
+# include common file
 
