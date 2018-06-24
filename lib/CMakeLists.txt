@@ -3,10 +3,23 @@ add_library(linkedlist STATIC
         )
 
 target_include_directories(linkedlist PUBLIC linkedlist include)
-# include common file
+
+
+
+add_library(linkedlistm STATIC
+        linkedlistm/list.c
+        )
+
+target_include_directories(linkedlistm PUBLIC linkedlistm)
+
+
+
+
 
 add_library(hashtable STATIC
         hashtable/chtbl.c
         )
 
-target_include_directories(hashtable PUBLIC hashtable linkedlist)
+target_include_directories(hashtable PUBLIC
+        linkedlistm
+        hashtable)
