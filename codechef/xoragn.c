@@ -34,7 +34,7 @@ int main(){
     }
 	    
     //return xor      
-    printf("%d",xor);
+    printf("%d\n",xor);
     return 0;
     
 }
