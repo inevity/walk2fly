@@ -4,6 +4,7 @@ project(testhashtable)
 add_executable(testhashtable testhashtable.c)
 
 
-target_link_libraries(testhashtable Unity linkedlistm hashtable)
+#target_link_libraries(testhashtable Unity linkedlistm hashtable)
+target_link_libraries(testhashtable Unity hashtable)
 enable_testing()
 add_test(NAME testhashtable COMMAND testhashtable)
