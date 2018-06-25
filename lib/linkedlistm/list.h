@@ -56,7 +56,9 @@ int list_rem_next(List *list, ListElmt *element, void **data);
 
 #define list_size(list) ((list)->size)
 
+
 #define list_head(list) ((list)->head)
+
 
 #define list_tail(list) ((list)->tail)
 
