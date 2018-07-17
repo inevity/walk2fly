@@ -1,6 +1,7 @@
 #ifndef _HASHTABLE_H
 #define _HASHTABLE_H
 //https://gist.github.com/tonious/1377667#gistcomment-2277101
+//only for string hash
 /* Read this comment first: https://gist.github.com/tonious/1377667#gistcomment-2277101
  * 2017-12-05
  * 
